@@ -26,7 +26,7 @@ def dictate():
     print("输入要测试的词组数量：\033[34m")
     try:
         lines = int(input())
-        while not (lines > 0 and lines < len(zh)):
+        while not (lines > 0 and lines < len(zh) + 1):
             print("\033[37m输入范围内数字！")
             print("输入要测试的词组数量：\033[34m")
             lines = int(input())
